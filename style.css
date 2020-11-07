@@ -1,0 +1,323 @@
+/*########################################
+          common css
+########################################*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #F4E9D5;
+}
+.container {
+  max-width: 960px;
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.col-2{
+  width: 49%;
+  margin: 0 0.5%;
+  float: left;
+}
+.col-3{
+  width: 31%;
+  margin: 0 1%;
+  float: left;
+}
+.col-5{
+  width: 19%;
+  margin: 0 0.5%;
+  float: left;
+}
+.f-left{
+  float: left;
+}
+.f-right {
+  float: right;
+}
+p{
+  font-size: 14px;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+/*########################################
+          header area
+########################################*/
+/*###################
+top
+###################*/
+.header_top_area{
+  background: #255A84;
+  overflow: hidden;
+  clear: both;
+}
+.header_top_area ul li {
+  position: relative;
+}
+.header_top_area ul li:after{
+  content: '';
+  position: absolute;
+  background: #F4E9D5;
+  height: 14px;
+  width: 1.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.header_top_area ul li:first-child:after{
+  display: none;
+}
+.header_top_area ul li a{
+  padding: 10px;
+  color: #F4E9D5;
+  text-transform: capitalize;
+  font-family: Helvetica,Arial,sans-serif;
+}
+.header_top_area ul li a:hover{
+  color: #333333;
+}
+/*###################
+bottom
+###################*/
+.header_bottom_area{
+  clear: both;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+.header_bottom_area:after ,.hero_area:after{
+  position: absolute;
+  content: '';
+  background: #B69F6B;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+}
+.logo_area {
+  color: #333333;
+}
+.logo_area h1{
+  font-size: 45px;
+  font-weight: normal;
+}
+.menu_area ul li{
+  padding: 15px;
+}
+.menu_area ul li a{
+  position: relative;
+  padding: 15px 0;
+  color: #000;
+  transition: 0.5s;
+  font-family: Monaco,'Courier New',monospace;
+}
+.menu_area ul li a:hover{
+  color: #255A84;
+  transition: 0.5s;
+}
+.menu_area ul li a:hover:after{
+  position: absolute;
+  content: '';
+  background: #255A84;
+  width: 95%;
+  height: 2px;
+  left: 2.5%;
+  bottom: 0;
+  transition: 0.5s;
+}
+/*########################################
+          hero area
+########################################*/
+.big_image{
+  background: #E1D8C3;
+  width: 25%;
+  float: left;
+  height: 100%;
+  padding: 2.2% 0;
+}
+.big_image img{
+  width: 80%;
+  height: auto;
+  padding: 18% 0 3% 18%;
+}
+.small_images{
+  width: 75%;
+  float: right;
+}
+.small_images img{
+  width: 19%;
+  height: auto;
+}
+.hero_area{
+  position: relative;
+  padding: 2% 0;
+  overflow: hidden;
+}
+/*########################################
+          content area
+########################################*/
+.content_area{
+  overflow: hidden;
+  position: relative;
+}
+.big_content img{
+  width: 100%;
+  height: auto;
+}
+.content_area h3{
+  color: #63615C;
+  margin: 10% 0 0%;
+  padding: 0 0 5%;
+  border-bottom: 1px solid #948E84;
+}
+.big_content p{
+  color: #666666;
+  margin: 7% 0;
+  font-family: Monaco,'Courier New',monospace;
+}
+.small_content_area{
+  overflow: hidden;
+}
+.small_content{
+  font-family: Monaco,'Courier New',monospace;
+  margin-top: 7%;
+  overflow: hidden;
+  border-bottom: 1px solid #948E84;
+  padding-bottom: 5%;
+}
+.sm_img{
+  border: 1px solid #4F4F4F;
+  width: 30%;
+  float: left;
+}
+.small_content img{
+  width: 95%;
+  height: 95%;
+  margin: 2.5%;
+}
+.sm_co_txt{
+  float: right;
+  width: 70%;
+  padding-left: 10px;
+  color: #666666;
+}
+.sm_co_txt button {
+  background: #3A6988;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  float: right;
+  margin: 5px;
+  transition: 0.5s;
+  font-family: Monaco,'Courier New',monospace;
+}
+.sm_co_txt button:hover{
+  background: #fff;
+  color: #3A6988;
+}
+.about_area{
+  width: 61.5%;
+  position: absolute;
+  bottom: -5%;
+  margin-bottom: 4%;
+}
+.about_area p{
+  margin-top: 3%;
+  color: #666666;
+  font-family: Monaco,'Courier New',monospace;
+}
+.about_area a{
+  color: #26575E;
+  display: inline;
+  text-decoration: underline;
+}
+/*########################################
+          footer area
+########################################*/
+footer{
+  background: #E1D8C3;
+  overflow: hidden;
+  padding: 2% 0;
+  margin-top: 4%;
+}
+footer h3{
+  color: #8D8A83;
+  border-bottom: 1px solid #999999;
+  padding: 4% 0;
+}
+footer p{
+  color: #3A6988;
+  padding: 4% 0;
+  font-family: Monaco,'Courier New',monospace;
+}
+/*########################################
+          copyright area
+########################################*/
+.copyright_area{
+  background: #949494;
+  overflow: hidden;
+  padding: 2%;
+  color: #626262;
+  font-family: Monaco,'Courier New',monospace;
+}
+/*########################################
+          responsive css
+########################################*/
+@media (max-width:800px){
+  .col-3, .col-5{
+    width: 49%;
+    margin: 0 0.5%;
+  }
+  .about_area{
+    position: initial;
+  }
+}
+@media (max-width:750px){
+  .col-2, .col-3, .col-5{
+    width: 100%;
+    margin: 0;
+  }
+  .f-left, .f-right{
+    float: none;
+  }
+  ul{
+    text-align: center;
+  }
+  .header_top_area ul li a{
+    padding: 10px 5px;
+  }
+    .menu_area ul li{
+    padding: 10px 5px;
+  }
+  .menu_area ul li a{
+    padding: 10px 0;
+  }
+  .logo_area h1{
+    font-size: 35px;
+    text-align: center;
+  }
+  .logo_area p{
+    text-align: center;
+  }
+}
+@media (max-width:450px){
+  .small_images img{
+    width: 40%;
+  }
+}
